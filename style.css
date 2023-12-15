@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+
+}
+img { /*Aqui chamamos uma tag de img para as imagens ficarem responsivas*/ 
+    max-width: 100%;
+}
+
+
+header {
+    background-color: black; /*cor de fundo do header*/
+    padding: 30px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav > img { /*Aqui chamos o logo da imagem para poder definir o tamanho*/
+    width: 5vw;
+
+}
+
+.menu-header { /*aqui chamanos nosssa class que armazena as listas*/
+    display: flex; /*usamos para jogar os itens lasdo a lado*/
+    flex-wrap: wrap;
+    
+}
+
+.menu-header > li > a {
+    color: rgb(251, 252, 248); /*Alteraçao da cor da letra*/
+    text-decoration: none; /*desabilitando a decoraçao  no texto (sublinhado)*/
+    font-size: 12px; /*Tamanho da letra*/
+    
+}
+
+.menu-header > li > a:hover { /* Chamamos nossa tag "a" para estilizaçao  ao passar o mouse */
+    color: gold; /*Habilitando a cor que será habilitada*/
+    transition: 0.8s; /*Tempo de transiçao para o efeito*/
+     font-size: 15px;/*aumentar a letra durante a transiçao*/
+}
+
+.menu-header > li { /*Chamamos nossa LI diretamente para espaça-las*/
+    margin-left: 20px;
+}
+
+#sessao {
+    padding: 10px;
+    display: flex;
+    
+
+}
+#sessao > #cabeçalho > h1 {/**/
+    font-size: 65px; /*tamanho da letra*/
+    color: gold;
+    margin-top: 70px; /*espaçamento da margem*/
+
+}
+
+#sessao > #cabeçalho > p { /*ediçao do primeiro paragrafo*/ 
+    font-size: 40px;
+    margin-top: 20px; /*espaçamento da margem*/
+    
+}
+
+#sessao > #cabeçalho > #text {
+    display: flex;
+    margin-top: 20px;
+    justify-content: left;
+    font-size: 20px;
+}
+
+#sessao > #cabeçalho > #text > #amarelo {
+    color: gold;
+    justify-content: left;
+}
+#sessao > #cabeçalho > #text > #s {
+    margin-top: 25px;
+
+}
+
+#sessao > #cabeçalho > button { /*Chamamos nossso butom da primeira sessao*/
+    padding: 20px;
+    border-radius: 35px; /*usamos para aredondar as bordas do button*/
+    width: 15rem; /*tamanho lateral*/
+    color: gold; /*cor da letra*/
+    margin: 20px; /*margem em volta do button*/
+    font-size: 25px; /*tamanho da letra dentro do buton*/
+}
+
+#sessao >#cabeçalho > button:hover { /*efeito ao passar o cursor*/
+    background-color: rgb(213, 216, 10); /*Atribuimos a cor que ficará*/
+    color: rgb(250, 246, 246); /*Cor da letra que ira se tornar ao passar o cursor*/
+    border-color: white;/*cor da borda ao passar o cursor*/
+    transition: 0.8s;
+}
+
+#app { /*aqui mexo na minha primeira imagem*/
+    padding: 30vh;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    
+} 
+
+
+#container{
+    font-size: 15px;
+    align-content: center;
+}
+
+#container > h2 {
+    font-size: 55px;
+    text-align: center;
+}
+#container > h3 {
+    font-size: 30px;
+}
+
+#container-cofre > img {/*Chamamos nossa imagem do cofre para estilizaçao*/
+    width: 20vw; /*Largura da imagem*/
+    margin-top: 30px; /*Distancia da margem superior*/
+    margin-left: 10vw; /*Distancia da margem a esquerda*/
+}
+#container-cofre {
+    background: linear-gradient(180deg, #0c16a364 8.33%, rgba(5, 39, 101,0.745)100%),url(img/img\ cofre\ fundo.jpg);
+    background-position: center;
+    background-attachment: fixed;/*deixar o plano de fundo fixado*/
+    height: 50rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#container-cofre > div > img {
+    width: 19vw; /*Largura da imagem*/
+    margin-left: 25rem;/*Distancia da margem a esquerda*/
+    margin-top: 8rem;/*distancia da margem superior*/
+    flex-wrap: wrap;
+}
+#container-cofre > div > h2 {
+    color: white;
+    font-size: 30px;
+    margin-left: 9rem;
+}
+
+#container-cofre  > p {
+    font-size: 30px;
+    color: white;
+    margin-left: 9rem;
+}
+
+footer {
+    padding: 13vh;/*Preenchimento do rodapé*/
+    background-color: black;/*cor de fundo*/
+    text-align: center;/*Alinhando texto ao centro*/
+}
+footer > img {
+    width: 10rem;
+}
+.item-footer {
+    color: rgb(139, 134, 134);
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+
+}
+.item-footer > a {
+    color: white; /*Cor da letra*/
+    text-decoration: none;
+    font-size: 20px;
+}
+.item-footer > a:hover { /*Efeito ao passar o cursor*/
+    color: gold; /*cor ao passar o mouse*/
+    transition: 0.8s;/*demora da transiçao de cor*/
+}
+   
+  
+   
